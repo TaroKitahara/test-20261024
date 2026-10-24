@@ -1,0 +1,7 @@
+on: pull_request
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "about to fail"
+      - run: exit 1
